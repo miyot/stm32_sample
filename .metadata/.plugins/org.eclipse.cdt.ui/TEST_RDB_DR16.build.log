@@ -1,0 +1,10 @@
+17:17:33 **** Incremental Build of configuration Debug for project TEST_RDB_DR16 ****
+make -j4 all 
+arm-none-eabi-size   TEST_RDB_DR16.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17064	    120	   2200	  19384	   4bb8	TEST_RDB_DR16.elf
+Finished building: default.size.stdout
+ 
+
+17:17:36 Build Finished. 0 errors, 0 warnings. (took 2s.479ms)
+

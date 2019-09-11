@@ -1,0 +1,33 @@
+03:09:24 **** Build of configuration Debug for project RDB_DR16 ****
+make -j4 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -I../ -x assembler-with-cpp --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f427iihx.o" "../Startup/startup_stm32f427iihx.s"
+arm-none-eabi-gcc "../Src/bsp/bsp_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F427xx -DUSE_HAL_DRIVER -DDEBUG -c -IC:/Users/boost/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I../Inc -IC:/Users/boost/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/boost/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/boost/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/bsp/bsp_uart.d" -MT"Src/bsp/bsp_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/bsp/bsp_uart.o"
+arm-none-eabi-gcc "../Src/dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F427xx -DUSE_HAL_DRIVER -DDEBUG -c -IC:/Users/boost/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I../Inc -IC:/Users/boost/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/boost/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/boost/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/dma.d" -MT"Src/dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/dma.o"
+arm-none-eabi-gcc "../Src/gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F427xx -DUSE_HAL_DRIVER -DDEBUG -c -IC:/Users/boost/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -I../Inc -IC:/Users/boost/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/boost/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/boost/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/gpio.d" -MT"Src/gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/gpio.o"
+In file included from ../Inc/dma.h:28:0,
+                 from ../Src/dma.c:20:
+../Inc/main.h:31:10: fatal error: stm32f4xx_hal.h: No such file or directory
+ #include "stm32f4xx_hal.h"
+          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from ../Inc/gpio.h:28:0,
+                 from ../Src/gpio.c:21:
+../Inc/main.h:31:10: fatal error: stm32f4xx_hal.h: No such file or directory
+ #include "stm32f4xx_hal.h"
+          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from ../Inc/usart.h:27:0,
+                 from ../Inc/bsp/bsp_uart.h:15,
+                 from ../Src/bsp/bsp_uart.c:13:
+../Inc/main.h:31:10: fatal error: stm32f4xx_hal.h: No such file or directory
+ #include "stm32f4xx_hal.h"
+          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Src/subdir.mk:48: Src/dma.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Src/subdir.mk:50: Src/gpio.o] Error 1
+make: *** [Src/bsp/subdir.mk:18: Src/bsp/bsp_uart.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+
+03:09:29 Build Failed. 7 errors, 0 warnings. (took 4s.519ms)
+

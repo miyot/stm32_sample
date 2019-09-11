@@ -1,0 +1,10 @@
+19:56:04 **** Incremental Build of configuration Debug for project TEST_RDB_IBT-2 ****
+make -j4 all 
+arm-none-eabi-size   TEST_RDB_IBT-2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15796	     20	   2140	  17956	   4624	TEST_RDB_IBT-2.elf
+Finished building: default.size.stdout
+ 
+
+19:56:07 Build Finished. 0 errors, 0 warnings. (took 2s.243ms)
+

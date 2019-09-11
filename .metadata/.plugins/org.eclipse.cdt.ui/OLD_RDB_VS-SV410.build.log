@@ -1,0 +1,17 @@
+00:16:55 **** Incremental Build of configuration Debug for project OLD_RDB_VS-SV410 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F427xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Inc -IC:/Users/miyot/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/miyot/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/CMSIS/Include -IC:/Users/miyot/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/miyot/STM32Cube/Repository/STM32Cube_FW_F4_V1.24.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-g++ -o "OLD_RDB_VS-SV410.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\miyot\STM32CubeIDE\workspace_1.0.1\OLD_RDB_VS-SV410\STM32F427IIHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="OLD_RDB_VS-SV410.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: OLD_RDB_VS-SV410.elf
+ 
+arm-none-eabi-objdump -h -S  OLD_RDB_VS-SV410.elf  > "OLD_RDB_VS-SV410.list"
+arm-none-eabi-size   OLD_RDB_VS-SV410.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11508	     20	   1916	  13444	   3484	OLD_RDB_VS-SV410.elf
+Finished building: default.size.stdout
+ 
+Finished building: OLD_RDB_VS-SV410.list
+ 
+
+00:16:59 Build Finished. 0 errors, 0 warnings. (took 4s.197ms)
+

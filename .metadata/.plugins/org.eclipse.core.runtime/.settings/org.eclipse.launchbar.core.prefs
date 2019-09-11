@@ -1,0 +1,9 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:TEST_RDB_DR16.elf,org.eclipse.launchbar.core.descriptorType.default\:TEST_RDB_VS-SV410.elf,org.eclipse.launchbar.core.descriptorType.default\:TEST_RDB_IBT-2.elf,org.eclipse.launchbar.core.descriptorType.default\:LED_flash.elf
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:OLD_RDB_VS-SV410.elf/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:OLD_RDB_VS-SV410.elf/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:TEST_RDB_DR16.elf/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:TEST_RDB_DR16.elf/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

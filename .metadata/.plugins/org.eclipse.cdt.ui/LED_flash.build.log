@@ -1,0 +1,10 @@
+20:25:27 **** Incremental Build of configuration Debug for project LED_flash ****
+make -j4 all 
+arm-none-eabi-size   LED_flash.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6160	     20	   1572	   7752	   1e48	LED_flash.elf
+Finished building: default.size.stdout
+ 
+
+20:25:29 Build Finished. 0 errors, 0 warnings. (took 1s.662ms)
+
